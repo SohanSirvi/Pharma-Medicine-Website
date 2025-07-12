@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navlinks{
+    display: none;
+}
+.navcontent{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../Images/Background/backg.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.herocontent{
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.herocontent h1{
+    font-size: 46px;
+}
+.herocontent button{
+    background-color: #51EAEA;
+    margin-top: 25px;
+    padding: 16px 48px;
+    border-radius: 5px;
+    border: 2px solid #51EAEA;
+    font-size: 16px;
+}
+.herocontent button:hover{
+    background: none;
+    color: #51EAEA;
+}
+/* Features */
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.featurecontent{
+    width: 100%;
+}
+.features h2{
+    font-size: 32px;
+}
+.features h3{
+    font-size: 22px;
+}
+.features p{
+    word-spacing: 3px;
+}
+.feat1{
+    background-color: #51eaea;
+}
+.feat2{
+    background-color: #74D12B;
+}
+.feat3{
+    background-color: #FFC107;
+}
+.feat{
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+/* Products */
+.products{
+    width: 100%;
+    text-align: center;
+}
+.product-item img{
+    width: 250px;
+    height: 350px;
+}
+.product-item{
+    padding: 20px 0;
+}
+.productcontent h2{
+    font-size: 32px;
+}
+.productcontent button{
+    background-color: #51eaea;
+    padding: 16px 24px;
+    border: 2px solid #51eaea;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.productcontent button:hover{
+    background: none;
+    color: #51EAEA;   
+}
+/* New Products */
+.new-products{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+.new-products h2{
+    padding: 30px 0;
+    font-size: 32px;
+}
+/* Testimonials Of People */
+.testimonial{
+    padding: 40px;
+    text-align: start;
+}
+.testimonial h2{
+    text-align: center;
+}
+.person img{
+    border-radius: 50%;
+}
+.p{
+    color: grey;
+}
+.testimonial-content h2{
+    font-size: 32px;
+}
+.info{
+    background-image: linear-gradient(rgba(57, 221, 230, 0.789), #51eaeae6) ,url(../Images/Background/back2.jpg);
+    
+    padding: 20px;
+    background-position: center;
+}
+.information{
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column ;
+    background-size: 100% 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
+.information p{
+    line-height: 1.7;
+    opacity: 0.8;
+    width: 50%;
+}
+.one{
+    background-image: url(../Images/Background/bg1.jpg);
+}
+.two{
+    background-image: url(../Images/Background/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.two h2{
+    margin-left: 40%;
+}
+.two p{
+    margin-left: 40%;
+}
+.information h2{
+    width: 60%;
+}
+.address{
+    display: flex;
+}
+/* Footer */
+.footer{
+    padding: 10px;
+}
+.footer-list1 h4{
+    font-size: 20px;
+}
+.footer-list1 p{
+    font-size: 16px;
+    color: grey;
+    word-spacing: 6px;
+}
+.footer li{
+    list-style: none;   
+}
+.footer-list2 li{
+    list-style: none;
+    padding: 10px 0 ;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.footer-list2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-list2 h4{
+    font-size: 20px;
+}
+.footer-list3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-list3 li{
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+.footer-list3 h4{
+    font-size: 20px;
+}
+.footer-list3 address{
+    width: 300px;
+}
+.copyright{
+    text-align: center;
+}
+/* Media Query For Tablet View */
+@media(min-width:768px){
+    .logo{
+        padding-left: 50px;
+    }
+    .search{
+        padding-right: 50px;
+        display: flex;
+        gap: 20px;
+    }
+    .hero{
+        height: 95vh;
+    }
+    .hero h1{
+        font-size: 70px;
+    }
+    .herocontent button{
+        margin: 25px 250px;
+    }
+
+    .features .feat{
+        width: 40%;
+        display: flex;
+    }   
+    .featurecontent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .new-items{
+        width: 50%;
+    }
+    .new-productcontent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .testimonial{
+        padding-top: 100px;
+        flex-direction: column;
+    }
+    .person{
+        max-width: 300px;
+    }
+    .testimonial-content{
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .information h2{
+        font-size: 32px;
+    }
+    .info-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .information{
+        width: 85%;
+    }   
+    .footer{
+        padding: 50px;
+    }
+    .footer-list1{
+        width: 40%;
+    }
+    
+}
+/* Media Query For Laptop View */
+@media(min-width: 992px){
+    .menu{
+        display: none;
+    }
+    .navlinks{
+        display: block;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .navlinks a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .features .feat{
+        width: 27%;
+        display: flex;
+    }
+    .person{
+        padding: 20px;
+    }
+    .person p{
+        line-height: 1.5;
+    }
+    .products{
+        display: flex;
+        justify-content: center;
+    }
+    .productcontent{
+        max-width: 85%;
+    }
+
+    .info-content{
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+    .information{
+        max-width: 450px;
+    }
+    .footer-list1{
+        width: 25%;
+    }
+    .footer-list1 p{
+        line-height: 1.5;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-list3{
+        width: 30%;
+    }
+}
